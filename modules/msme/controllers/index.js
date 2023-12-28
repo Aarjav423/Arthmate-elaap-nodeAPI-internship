@@ -1,0 +1,30 @@
+module.exports.LeadController = require('./leads/LeadCreate.controller');
+module.exports.LeadListController = require('./leads/LeadList.controller');
+module.exports.LeadExportController = require('./leads/LeadExport.controller');
+module.exports.LeadDetailsController = require('./leads/LeadDetails.controller');
+module.exports.LeadReviewDetailsController = require('./leads/LeadReviewDetails.controller');
+module.exports.EditDraftLeadController = require('./leads/EditDraftLead.controller');
+module.exports.LeadStatusController = require('./leads/LeadStatus.controller');
+module.exports.FetchLeadSectionController = require('./leads/FetchLeadSection.controller');
+module.exports.LeadSectionStausUpdateController = require('./leads/LeadSectionStausUpdate.Controller');
+module.exports.FetchLeadSubmissionController = require('./leads/FetchLeadSubmission.controller');
+module.exports.FetchLeadDocumentsController = require('./leads/FetchLeadDocuments.controller');
+module.exports.FetchOfferDetailsController = require('./leads/FetchOfferDetails.controller');
+module.exports.CreateOfferDetailsController = require('./leads/CreateOfferDetails.controller');
+module.exports.FetchGSTLeadSectionController = require('./leads/FetchGSTValidation.Controller');
+module.exports.SectionStatusController = require('./leads/SectionStatus.controller');
+module.exports.CamsDetailController = require('./leads/CamsDetail.controller');
+module.exports.OkycController = require('./leads/okyc.controller');
+module.exports.AadharOtpController = require('./leads/AadharOtp.controller')
+module.exports.CreateActivityLogController = require('./activityLog/CreateActivityLog.Controller');
+module.exports.GetActivityLogsController = require('./activityLog/GetActivityLogs.Controller');
+module.exports.AadhaarCheckController = require('./leads/AadharCheck.controller');
+
+module.exports.CreateLoanController = require('./loans/CreateLoan.controller');
+module.exports.DeleteDocumentsController = require('./deleteDoc/deleteDoc.controller');
+module.exports.LeadRiskDeriveController = require('./leads/LeadRiskDerive.controller')
+module.exports.OfferAmendController = require('./offer/OfferAmend.controller')
+module.exports.UpdateOfferDeviationController = require('./leads/UpdateOfferDeviation.controller')
+module.exports.UploadXmlDocumentsController = require('./uploadXml/uploadXmlDoc.controller');
+module.exports.SubsectionDeleteController = require('./leads/SubsectionDelete.controller');
+

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Lora"
+    />
+    <style>
+      /* cyrillic-ext */
+      @font-face {
+        font-family: "Lora";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/lora/v26/0QI6MX1D_JOuGQbT0gvTJPa787weuxJMkq18ndeYxZ2JTg.woff2)
+          format("woff2");
+        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+          U+A640-A69F, U+FE2E-FE2F;
+      }
+      /* cyrillic */
+      @font-face {
+        font-family: "Lora";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/lora/v26/0QI6MX1D_JOuGQbT0gvTJPa787weuxJFkq18ndeYxZ2JTg.woff2)
+          format("woff2");
+        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+      }
+      /* vietnamese */
+      @font-face {
+        font-family: "Lora";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/lora/v26/0QI6MX1D_JOuGQbT0gvTJPa787weuxJOkq18ndeYxZ2JTg.woff2)
+          format("woff2");
+        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+      }
+      /* latin-ext */
+      @font-face {
+        font-family: "Lora";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/lora/v26/0QI6MX1D_JOuGQbT0gvTJPa787weuxJPkq18ndeYxZ2JTg.woff2)
+          format("woff2");
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+      }
+      /* latin */
+      @font-face {
+        font-family: "Lora";
+        font-style: normal;
+        font-weight: 400;
+        src: url(https://fonts.gstatic.com/s/lora/v26/0QI6MX1D_JOuGQbT0gvTJPa787weuxJBkq18ndeYxZ0.woff2)
+          format("woff2");
+        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+          U+2212, U+2215, U+FEFF, U+FFFD;
+      }
+      tr {
+        height: 40px !important;
+      }
+    </style>
+    <!-- <script>
+      var img = new Image();
+      img.src = <%=  %>;
+      document.getElementById('image').appendChild(img);
+    </script> -->
+  </head>
+  <body style="font-family: lora">
+    <!-- Header -->
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <h1 style="margin-top: 0px; margin-bottom: 0px">OVD TYPE - AADHAAR</h1>
+      <h3 style="color: grey; margin-top: 0px">AADHAAR DETAILS</h3>
+    </div>
+    <div style="display: flex; flex-direction: row">
+      <!-- Form -->
+      <div style="width: 80%; display: flex; flex-direction: column">
+        <table>
+          <tr>
+            <td style="font-weight: 600; width: 45%">MODE OF KYC</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= mode %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">REFERENCE NUMBER</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= ref %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">AADHAAR ID</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= aadhaarId %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">SHARE CODE</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= shareCode %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">TIMESTAMP</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= timestamp %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">NAME</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= name %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">MOBILE</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= mobile %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">DATE OF BIRTH</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= dob %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">GENDER</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= gender %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">EMAIL ID</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= email %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">CARE OF</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= co %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">HOUSE</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= house %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">STREET</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= street %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">LANDMARK</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= landmark %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">LOCALITY</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= locality %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">POSTAL PINCODE</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= pincode %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">POST OFFICE NAME</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= po %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">DISTRICT</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= district %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">SUB DISTRICT</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= sub_district %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">
+              NAME OF TOWN/VILLAGE/CITY
+            </td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= vtc %></td>
+          </tr>
+          <tr>
+            <td style="font-weight: 600; width: 45%">STATE</td>
+            <td style="border-bottom: 1px solid; width: 55%"><%= state %></td>
+          </tr>
+        </table>
+      </div>
+      <!-- Image -->
+      <div style="width: 20%; padding-left: 10%" id="image">
+          <img src="<%- image %>" alt="">
+      </div>
+    </div>
+  </body>
+</html>
